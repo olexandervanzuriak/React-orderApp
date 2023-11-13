@@ -5,11 +5,22 @@ import pizza4 from "./assets/pizza4.jpeg"
 import pizza5 from "./assets/pizza5.jpeg"
 import pizza6 from "./assets/pizza6.jpeg"
 import sushi1 from "./assets/sushi1.jpeg"
+import axios from "axios"
+
+const getData = async () => {
+    const response = await axios.get("http://localhost:3000/api/v1/food_data");
+    return response.data;
+  }
+
+
+const dataProducts = getData();
+
+console.log(dataProducts.Promise);
 
 export const PRODUCTS = [
     {
         id: 1,
-        productName: "Pizza Caesar",
+        productName: dataProducts.name,
         price: 10,
         productImage: pizza1
     },

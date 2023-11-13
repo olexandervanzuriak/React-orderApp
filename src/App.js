@@ -4,6 +4,7 @@ import { Navbar } from "./components/Navbar";
 import { Shop } from "./pages/shop/shop";
 import { Cart } from "./pages/cart/cart";
 import { ShopContextProvider } from "./context/shop-context";
+import axios from "axios";
 
 function App() {
   return (

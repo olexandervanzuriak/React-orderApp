@@ -3,6 +3,7 @@ import { Product } from "./Product";
 import "./shop.css";
 
 export const Shop = () => {
+
   return (
     <div>
       <div className="shop">
