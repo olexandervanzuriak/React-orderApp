@@ -1,0 +1,2 @@
+class FoodDatum < ApplicationRecord
+end
